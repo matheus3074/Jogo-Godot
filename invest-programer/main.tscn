@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://boc4b8f0y07xq"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_7x5n3"]
+[ext_resource type="PackedScene" uid="uid://drxnvwfuefhsb" path="res://prefabs/bordas.tscn" id="2_sq01n"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_7x5n3")
+
+[node name="bordas" parent="." instance=ExtResource("2_sq01n")]

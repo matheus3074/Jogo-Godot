@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://drxnvwfuefhsb"]
+
+[ext_resource type="Texture2D" uid="uid://b72lh7chqfq8g" path="res://assets/Screen/AreaDeTrabalho.PNG" id="1_p3drt"]
+[ext_resource type="Texture2D" uid="uid://ngwtyepijufk" path="res://assets/Screen/IMG_1208.PNG" id="1_pshor"]
+
+[node name="bordas" type="Node2D"]
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -872.0
+offset_top = -422.0
+offset_right = 1816.0
+offset_bottom = 918.0
+texture = ExtResource("1_p3drt")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -204.0
+offset_top = -90.0
+offset_right = 1152.0
+offset_bottom = 594.0
+texture = ExtResource("1_pshor")
+expand_mode = 1
