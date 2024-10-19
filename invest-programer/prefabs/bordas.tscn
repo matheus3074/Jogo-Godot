@@ -1,23 +1,74 @@
-[gd_scene load_steps=3 format=3 uid="uid://drxnvwfuefhsb"]
+[gd_scene load_steps=6 format=3 uid="uid://drxnvwfuefhsb"]
 
 [ext_resource type="Texture2D" uid="uid://b72lh7chqfq8g" path="res://assets/Screen/AreaDeTrabalho.PNG" id="1_p3drt"]
 [ext_resource type="Texture2D" uid="uid://ngwtyepijufk" path="res://assets/Screen/IMG_1208.PNG" id="1_pshor"]
+[ext_resource type="Texture2D" uid="uid://k8eq1kn47gdy" path="res://assets/APPs/Google Chrome.png" id="2_dtuat"]
+[ext_resource type="Texture2D" uid="uid://ck62gqy1k8yrr" path="res://assets/Screen/IMG_1244.PNG" id="3_xq0vp"]
+
+[sub_resource type="GDScript" id="GDScript_gy42k"]
+script/source = "extends Node2D
+
+# Função chamada ao iniciar a cena
+func _ready() -> void:
+	if $TextureRect2/BrowserButton.connect(\"pressed\", Callable(self, \"_on_browser_button_pressed\")):
+		$TextureRect2/BrowserButton.disconnect(\"pressed\", Callable(self, \"_on_browser_button_pressed\"))
+	# Conectar o botão para abrir o navegador
+	$TextureRect2/BrowserButton.connect(\"pressed\", Callable(self, \"_on_browser_button_pressed\"))    
+	# Certifica-se de que o TextureRect do navegador está invisível ao início
+	$Browser.visible = false  # Substitua pelo nome correto do seu TextureRect
+
+# Função chamada quando o botão do navegador é pressionado
+func _on_browser_button_pressed() -> void:
+	print(\"Botão pressionado!\")
+	# Torna o TextureRect do navegador visível
+	$Browser.visible = true
+	
+	# Se desejar, você pode esconder outros elementos da borda
+	$TextureRect2.visible = false  # Substitua pelo nome correto do nó que você deseja esconder
+
+# Função para fechar o navegador e retornar à área de trabalho
+func _on_close_browser_pressed() -> void:
+	$Browser.visible = false
+	$TextureRect2.visible = true  # Reexibe os elementos da borda
+
+# Chamada a cada frame. 'delta' é o tempo decorrido desde o frame anterior.
+func _process(_delta: float) -> void:
+	pass
+"
 
 [node name="bordas" type="Node2D"]
+script = SubResource("GDScript_gy42k")
 
-[node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = -872.0
-offset_top = -422.0
-offset_right = 1816.0
-offset_bottom = 918.0
+[node name="Browser" type="TextureRect" parent="."]
+visible = false
+offset_left = 38.0
+offset_top = 48.0
+offset_right = 927.0
+offset_bottom = 418.0
+texture = ExtResource("3_xq0vp")
+
+[node name="AreaDeTrabalho" type="TextureRect" parent="."]
+offset_left = -2.0
+offset_top = -14.0
+offset_right = 977.0
+offset_bottom = 465.0
 texture = ExtResource("1_p3drt")
-expand_mode = 3
-stretch_mode = 5
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -204.0
-offset_top = -90.0
-offset_right = 1152.0
-offset_bottom = 594.0
+[node name="BrowserButton" type="Button" parent="AreaDeTrabalho"]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 433.0
+offset_right = 415.0
+offset_bottom = 561.0
+scale = Vector2(0.2, 0.2)
+icon = ExtResource("2_dtuat")
+flat = true
+
+[node name="BordaComp" type="TextureRect" parent="."]
+offset_left = -92.0
+offset_top = -81.0
+offset_right = 1052.0
+offset_bottom = 600.0
 texture = ExtResource("1_pshor")
-expand_mode = 1
+
+[connection signal="pressed" from="AreaDeTrabalho/BrowserButton" to="." method="_on_browser_button_pressed"]
