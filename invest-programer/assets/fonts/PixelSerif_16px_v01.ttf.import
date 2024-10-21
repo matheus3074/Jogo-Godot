@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://ck4g1u0nmab0n"
-path="res://.godot/imported/PixelSerif_16px_v01.ttf-eed4db1c9b1ca8f4f1a5bffc60296781.fontdata"
+path="res://.godot/imported/PixelSerif_16px_v01.ttf-f949e7a532d154bfcb970eb52f866c78.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/Pixelart_Serif_Font_v02_by_ReffPixels/Old versions/PixelSerif_16px_v01.ttf"
-dest_files=["res://.godot/imported/PixelSerif_16px_v01.ttf-eed4db1c9b1ca8f4f1a5bffc60296781.fontdata"]
+source_file="res://assets/fonts/PixelSerif_16px_v01.ttf"
+dest_files=["res://.godot/imported/PixelSerif_16px_v01.ttf-f949e7a532d154bfcb970eb52f866c78.fontdata"]
 
 [params]
 

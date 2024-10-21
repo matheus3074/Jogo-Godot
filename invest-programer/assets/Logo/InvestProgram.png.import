@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlpcy2t4ni1xh"
-path="res://.godot/imported/reffspixelfont_spritesheet_0_to_1023.png-d42ff8305071b29a972920300c9c9f86.ctex"
+uid="uid://cbu5nrlgj1g5d"
+path="res://.godot/imported/InvestProgram.png-3e114603adc7cc7f63adf9cbfb8e0502.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fonts/reffspixelfont_spritesheet_0_to_1023.png"
-dest_files=["res://.godot/imported/reffspixelfont_spritesheet_0_to_1023.png-d42ff8305071b29a972920300c9c9f86.ctex"]
+source_file="res://assets/Logo/InvestProgram.png"
+dest_files=["res://.godot/imported/InvestProgram.png-3e114603adc7cc7f63adf9cbfb8e0502.ctex"]
 
 [params]
 
@@ -25,7 +25,7 @@ mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
-process/fix_alpha_border=false
+process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
