@@ -1,6 +1,4 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://yxqwwdkv88pe"]
-
-[ext_resource type="FontFile" uid="uid://dvehdqx7i2fj1" path="res://assets/fonts/Pixelart_Serif_Font_v02_by_ReffPixels/PixelSerif_16px_v02.otf" id="1_h1rk3"]
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://yxqwwdkv88pe"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m5m41"]
 bg_color = Color(0.489682, 0.565382, 0.955395, 1)
@@ -37,7 +35,7 @@ border_color = Color(0.382636, 0.539008, 0.842061, 1)
 
 [resource]
 Button/colors/font_color = Color(1, 1, 1, 1)
-Button/fonts/font = ExtResource("1_h1rk3")
+Button/fonts/font = null
 Button/styles/focus = SubResource("StyleBoxFlat_m5m41")
 Button/styles/hover = SubResource("StyleBoxFlat_i54n0")
 Button/styles/normal = SubResource("StyleBoxFlat_x0bee")

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dryqlg5yif5ad"
-path="res://.godot/imported/reffspixelfont_spritesheet_7680_to_8703.png-3eecd1f1521819a754a61d2b9bbeaf47.ctex"
+path="res://.godot/imported/reffspixelfont_spritesheet_7680_to_8703.png-6eb6131f2e6e97830af720842e8ca16a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fonts/Pixelart_Serif_Font_v02_by_ReffPixels/Spritesheets/reffspixelfont_spritesheet_7680_to_8703.png"
-dest_files=["res://.godot/imported/reffspixelfont_spritesheet_7680_to_8703.png-3eecd1f1521819a754a61d2b9bbeaf47.ctex"]
+source_file="res://assets/fonts/reffspixelfont_spritesheet_7680_to_8703.png"
+dest_files=["res://.godot/imported/reffspixelfont_spritesheet_7680_to_8703.png-6eb6131f2e6e97830af720842e8ca16a.ctex"]
 
 [params]
 

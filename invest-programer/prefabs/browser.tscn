@@ -1,14 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://crnf7too1xgf0"]
+[gd_scene load_steps=6 format=3 uid="uid://crnf7too1xgf0"]
 
 [ext_resource type="Script" path="res://prefabs/browser.gd" id="1_8pma8"]
 [ext_resource type="Texture2D" uid="uid://ck62gqy1k8yrr" path="res://assets/Screen/IMG_1244.PNG" id="1_o0ho0"]
 [ext_resource type="Texture2D" uid="uid://ngwtyepijufk" path="res://assets/Screen/IMG_1208.PNG" id="2_q4a8y"]
+[ext_resource type="PackedScene" uid="uid://drxnvwfuefhsb" path="res://prefabs/bordas.tscn" id="2_wywcy"]
 [ext_resource type="Texture2D" uid="uid://dppg7w4x1hpn4" path="res://assets/icons/exitBrowser.PNG" id="3_p3bum"]
 
 [node name="Browser" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_8pma8")
+
+[node name="bordas" parent="." instance=ExtResource("2_wywcy")]
 
 [node name="Browser" type="TextureRect" parent="."]
 layout_mode = 0
