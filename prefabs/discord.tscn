@@ -1,0 +1,87 @@
+[gd_scene load_steps=9 format=3 uid="uid://1kchpv7n78mw"]
+
+[ext_resource type="Texture2D" uid="uid://csrfwq7f0yha3" path="res://assets/Screen/IMG_1243.PNG" id="1_fvq4u"]
+[ext_resource type="Script" path="res://prefabs/discord.gd" id="1_xr3uk"]
+[ext_resource type="Texture2D" uid="uid://b72lh7chqfq8g" path="res://assets/Screen/AreaDeTrabalho.PNG" id="2_sbna1"]
+[ext_resource type="Texture2D" uid="uid://ngwtyepijufk" path="res://assets/Screen/IMG_1208.PNG" id="2_wu46u"]
+[ext_resource type="Texture2D" uid="uid://k8eq1kn47gdy" path="res://assets/APPs/Google Chrome.png" id="3_yknus"]
+[ext_resource type="Texture2D" uid="uid://dppg7w4x1hpn4" path="res://assets/icons/exitBrowser.PNG" id="4_44a1q"]
+[ext_resource type="Texture2D" uid="uid://bmnmg635lccm6" path="res://assets/icons/Menu.PNG" id="6_c42j0"]
+[ext_resource type="Texture2D" uid="uid://dh704yxduvvaq" path="res://assets/APPs/Discord.png" id="7_ct4o8"]
+
+[node name="Discord" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_xr3uk")
+
+[node name="AreaDeTrabalho" type="TextureRect" parent="."]
+offset_left = -2.0
+offset_top = -14.0
+offset_right = 977.0
+offset_bottom = 465.0
+texture = ExtResource("2_sbna1")
+
+[node name="Discord" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 29.0
+offset_right = 930.0
+offset_bottom = 418.0
+texture = ExtResource("1_fvq4u")
+
+[node name="BordaComp" type="TextureRect" parent="."]
+offset_left = -92.0
+offset_top = -81.0
+offset_right = 1052.0
+offset_bottom = 600.0
+texture = ExtResource("2_wu46u")
+
+[node name="browser" type="Button" parent="."]
+offset_left = 287.0
+offset_top = 419.0
+offset_right = 415.0
+offset_bottom = 547.0
+scale = Vector2(0.2, 0.2)
+icon = ExtResource("3_yknus")
+flat = true
+
+[node name="exit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 860.0
+offset_top = 34.0
+offset_right = 1235.0
+offset_bottom = 230.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.07, 0.07)
+icon = ExtResource("4_44a1q")
+flat = true
+
+[node name="Menu" type="Button" parent="."]
+light_mask = 3
+offset_left = 53.0
+offset_top = 420.0
+offset_right = 390.0
+offset_bottom = 755.0
+scale = Vector2(0.07, 0.07)
+icon = ExtResource("6_c42j0")
+
+[node name="Discord2" type="Button" parent="."]
+offset_left = 322.0
+offset_top = 419.0
+offset_right = 450.0
+offset_bottom = 547.0
+scale = Vector2(0.2, 0.2)
+icon = ExtResource("7_ct4o8")
+flat = true
+
+[connection signal="pressed" from="browser" to="." method="_on_browser_pressed"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]

@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://boc4b8f0y07xq"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_7x5n3"]
+[ext_resource type="PackedScene" uid="uid://drxnvwfuefhsb" path="res://prefabs/bordas.tscn" id="2_sq01n"]
+[ext_resource type="PackedScene" uid="uid://1kchpv7n78mw" path="res://prefabs/discord.tscn" id="3_bocj6"]
+[ext_resource type="Texture2D" uid="uid://bmnmg635lccm6" path="res://assets/icons/Menu.PNG" id="3_v704k"]
+[ext_resource type="PackedScene" uid="uid://crnf7too1xgf0" path="res://prefabs/browser.tscn" id="5_ir2ph"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_7x5n3")
+
+[node name="Browser" parent="." instance=ExtResource("5_ir2ph")]
+
+[node name="Discord" parent="." instance=ExtResource("3_bocj6")]
+
+[node name="bordas" parent="." instance=ExtResource("2_sq01n")]
+
+[node name="Menu" type="Button" parent="."]
+light_mask = 3
+layout_mode = 0
+offset_left = 53.0
+offset_top = 420.0
+offset_right = 390.0
+offset_bottom = 755.0
+scale = Vector2(0.07, 0.07)
+icon = ExtResource("3_v704k")
+
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]

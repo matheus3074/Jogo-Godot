@@ -1,9 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://drxnvwfuefhsb"]
+[gd_scene load_steps=16 format=3 uid="uid://drxnvwfuefhsb"]
 
 [ext_resource type="Script" path="res://prefabs/bordas.gd" id="1_aot33"]
 [ext_resource type="Texture2D" uid="uid://b72lh7chqfq8g" path="res://assets/Screen/AreaDeTrabalho.PNG" id="1_p3drt"]
 [ext_resource type="Texture2D" uid="uid://ngwtyepijufk" path="res://assets/Screen/IMG_1208.PNG" id="1_pshor"]
 [ext_resource type="Texture2D" uid="uid://k8eq1kn47gdy" path="res://assets/APPs/Google Chrome.png" id="2_dtuat"]
+[ext_resource type="Texture2D" uid="uid://dh704yxduvvaq" path="res://assets/APPs/Discord.png" id="5_3u4ha"]
+[ext_resource type="Texture2D" uid="uid://biup6tgieod73" path="res://assets/APPs/IMG_1220.PNG" id="5_702ee"]
+[ext_resource type="Texture2D" uid="uid://ostfu2oxdyfh" path="res://assets/APPs/Microsoft Excel.png" id="6_d6pv0"]
+[ext_resource type="Texture2D" uid="uid://cv67llaa7chyk" path="res://assets/APPs/Microsoft PowerPoint.png" id="7_h8jht"]
+[ext_resource type="Texture2D" uid="uid://bm8r5b083wxj4" path="res://assets/APPs/Microsoft Word.png" id="8_6xrys"]
+[ext_resource type="Texture2D" uid="uid://cucer87aa2rk4" path="res://assets/APPs/WinRAR.png" id="9_665pk"]
+[ext_resource type="Texture2D" uid="uid://dbhcke1bqth73" path="res://assets/APPs/Microsoft Access.png" id="10_cog2f"]
+[ext_resource type="Texture2D" uid="uid://d2rc8konpkdwo" path="res://assets/APPs/Microsoft Office.png" id="11_ccttu"]
+[ext_resource type="Texture2D" uid="uid://bu5iwxusjnx8s" path="res://assets/APPs/Steam.png" id="12_nltd2"]
+[ext_resource type="Texture2D" uid="uid://ojiau0uqsw4w" path="res://assets/APPs/Toggl Track.png" id="13_p2n8c"]
+[ext_resource type="Texture2D" uid="uid://bmnmg635lccm6" path="res://assets/icons/Menu.PNG" id="15_71dc3"]
 
 [node name="bordas" type="Control"]
 layout_mode = 3
@@ -11,6 +22,7 @@ anchors_preset = 0
 script = ExtResource("1_aot33")
 
 [node name="AreaDeTrabalho" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = -2.0
 offset_top = -14.0
 offset_right = 977.0
@@ -18,6 +30,7 @@ offset_bottom = 465.0
 texture = ExtResource("1_p3drt")
 
 [node name="BordaComp" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = -92.0
 offset_top = -81.0
 offset_right = 1052.0
@@ -34,4 +47,127 @@ scale = Vector2(0.2, 0.2)
 icon = ExtResource("2_dtuat")
 flat = true
 
+[node name="Discord" type="Button" parent="."]
+layout_mode = 0
+offset_left = 322.0
+offset_top = 419.0
+offset_right = 450.0
+offset_bottom = 547.0
+scale = Vector2(0.2, 0.2)
+icon = ExtResource("5_3u4ha")
+flat = true
+
+[node name="browserArea" type="Button" parent="."]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 171.0
+offset_right = 227.0
+offset_bottom = 299.0
+scale = Vector2(0.3, 0.3)
+icon = ExtResource("2_dtuat")
+flat = true
+
+[node name="DiscordArea" type="Button" parent="."]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 223.0
+offset_right = 227.0
+offset_bottom = 351.0
+scale = Vector2(0.3, 0.3)
+icon = ExtResource("5_3u4ha")
+flat = true
+
+[node name="Pasta" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 363.0
+offset_right = 683.0
+offset_bottom = 1003.0
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("5_702ee")
+
+[node name="Exel" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 67.0
+offset_right = 687.0
+offset_bottom = 707.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("6_d6pv0")
+
+[node name="PowerPoint" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 67.0
+offset_right = 739.0
+offset_bottom = 707.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("7_h8jht")
+
+[node name="Word" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 119.0
+offset_right = 739.0
+offset_bottom = 759.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("8_6xrys")
+
+[node name="winRar" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 120.0
+offset_right = 687.0
+offset_bottom = 760.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("9_665pk")
+
+[node name="Acess" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 171.0
+offset_right = 687.0
+offset_bottom = 811.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("10_cog2f")
+
+[node name="office" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 223.0
+offset_right = 687.0
+offset_bottom = 863.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("11_ccttu")
+
+[node name="Steam" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 275.0
+offset_right = 687.0
+offset_bottom = 915.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("12_nltd2")
+
+[node name="Toggl" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 327.0
+offset_right = 687.0
+offset_bottom = 967.0
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("13_p2n8c")
+
+[node name="Menu" type="Button" parent="."]
+light_mask = 3
+offset_left = 53.0
+offset_top = 420.0
+offset_right = 390.0
+offset_bottom = 755.0
+scale = Vector2(0.07, 0.07)
+icon = ExtResource("15_71dc3")
+
 [connection signal="pressed" from="browser" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Discord" to="." method="_on_discord_pressed"]
+[connection signal="pressed" from="browserArea" to="." method="_on_browser_area_pressed"]
+[connection signal="pressed" from="DiscordArea" to="." method="_on_discord_area_pressed"]

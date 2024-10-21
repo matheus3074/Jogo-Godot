@@ -1,16 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://crnf7too1xgf0"]
+[gd_scene load_steps=8 format=3 uid="uid://crnf7too1xgf0"]
 
 [ext_resource type="Script" path="res://prefabs/browser.gd" id="1_8pma8"]
 [ext_resource type="Texture2D" uid="uid://ck62gqy1k8yrr" path="res://assets/Screen/IMG_1244.PNG" id="1_o0ho0"]
 [ext_resource type="Texture2D" uid="uid://ngwtyepijufk" path="res://assets/Screen/IMG_1208.PNG" id="2_q4a8y"]
+[ext_resource type="PackedScene" uid="uid://drxnvwfuefhsb" path="res://prefabs/bordas.tscn" id="2_wywcy"]
 [ext_resource type="Texture2D" uid="uid://dppg7w4x1hpn4" path="res://assets/icons/exitBrowser.PNG" id="3_p3bum"]
+[ext_resource type="Texture2D" uid="uid://bmnmg635lccm6" path="res://assets/icons/Menu.PNG" id="6_gr1od"]
+[ext_resource type="Texture2D" uid="uid://dh704yxduvvaq" path="res://assets/APPs/Discord.png" id="7_ed8gv"]
 
 [node name="Browser" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_8pma8")
 
+[node name="bordas" parent="." instance=ExtResource("2_wywcy")]
+
 [node name="Browser" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = 38.0
 offset_top = 48.0
 offset_right = 927.0
@@ -18,6 +24,7 @@ offset_bottom = 418.0
 texture = ExtResource("1_o0ho0")
 
 [node name="BordaComp" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = -92.0
 offset_top = -81.0
 offset_right = 1052.0
@@ -41,4 +48,26 @@ scale = Vector2(0.07, 0.07)
 icon = ExtResource("3_p3bum")
 flat = true
 
+[node name="Menu" type="Button" parent="."]
+light_mask = 3
+layout_mode = 0
+offset_left = 53.0
+offset_top = 420.0
+offset_right = 390.0
+offset_bottom = 755.0
+scale = Vector2(0.07, 0.07)
+icon = ExtResource("6_gr1od")
+
+[node name="Discord2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 322.0
+offset_top = 419.0
+offset_right = 450.0
+offset_bottom = 547.0
+scale = Vector2(0.2, 0.2)
+icon = ExtResource("7_ed8gv")
+flat = true
+
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Discord2" to="." method="_on_discord_2_pressed"]
